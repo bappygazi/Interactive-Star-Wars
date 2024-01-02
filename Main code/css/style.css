@@ -1,0 +1,178 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+h1 {
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 10px;
+  letter-spacing: 1px;
+}
+h1 .web {
+  display: inline;
+}
+@media screen and (max-width: 1024px) {
+  h1 .web {
+    display: none;
+  }
+}
+h1 .touch {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  h1 .touch {
+    display: inline;
+  }
+}
+@media screen and (max-width: 568px) {
+  h1 {
+    top: 20px;
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+    font-size: 16px;
+  }
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: #508fbd;
+  position: absolute;
+  z-index: -1;
+  overflow: hidden;
+}
+.background .sun {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background-color: #ffdf57;
+  box-shadow: 0 0 50px #ffdf57;
+  opacity: 0.9;
+}
+.background .sand {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f8be5b+0,f4b44b+100 */
+  background: #f8be5b;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f8be5b 0%, #f4b44b 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #f8be5b 0%, #f4b44b 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #f8be5b 0%, #f4b44b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#f8be5b", endColorstr="#f4b44b",GradientType=0 );
+  /* IE6-9 */
+}
+.background .sand .mountains {
+  width: 100%;
+  height: 60px;
+  background-image: url("https://mike-l.uk/labs/bb-8/img/mountains.png");
+  background-size: auto 100%;
+  position: absolute;
+  top: -60px;
+  background-position: 300px 0;
+}
+
+.body {
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 10;
+}
+@media screen and (max-width: 568px) {
+  .body {
+    bottom: 60px;
+  }
+}
+.body .head {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -75px;
+  margin-left: -75px;
+  width: 150px;
+  height: 150px;
+  -webkit-transform: translateY(-95px);
+  transform: translateY(-95px);
+  -webkit-transform-origin: 50% 150px;
+  transform-origin: 50% 150px;
+  z-index: 2;
+}
+.body .head .head-shape {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://mike-l.uk/labs/bb-8/img/head.png");
+  background-size: 100%;
+}
+.body .head .eye {
+  top: 35px;
+  left: 50%;
+  border-radius: 100%;
+  width: 36px;
+  margin-top: -18px;
+  margin-left: -18px;
+  position: absolute;
+}
+.body .head .antenna {
+  width: 75px;
+  height: 75px;
+  background-image: url("https://mike-l.uk/labs/bb-8/img/antenna.png");
+  background-size: auto 100%;
+  position: absolute;
+  z-index: -3;
+  bottom: 80%;
+  left: 40%;
+  background-position: 2250px 0;
+}
+.body .shadow {
+  width: 110%;
+  position: absolute;
+  z-index: -2;
+  bottom: -20px;
+  margin-left: -5%;
+  height: 50px;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.body .depth {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("https://mike-l.uk/labs/bb-8/img/shadow.png");
+  background-size: 100%;
+  z-index: 2;
+}
+.body .inner {
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://mike-l.uk/labs/bb-8/img/body.png");
+  background-size: 100%;
+}
+.body .inner .test {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -40px 0 0 -40px;
+  width: 80px;
+  height: 80px;
+  background-color: red;
+}
